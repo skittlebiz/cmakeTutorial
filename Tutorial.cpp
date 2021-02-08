@@ -1,4 +1,5 @@
 #include "TutorialConfig.h"
+#include "subexe.h"
 #include <iostream>
 #ifdef USE_MYMATH
    #include "MathFunctions/MathFunctions.h"
@@ -10,6 +11,7 @@ using std::cout;
 using std::endl;
 int main(int argc, char** argv)
 {
+   sayHello();
    if (argc < 2)
    {
       cout << argv[0] << " Version " << Tutorial_VERSION_MAJOR << "."
